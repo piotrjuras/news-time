@@ -38,6 +38,9 @@ article main h2{
     section article main h2{
         width: 70vw;
     }
+    .focus{
+        width: 95vw;
+    }
 
 }
 

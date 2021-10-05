@@ -14,7 +14,7 @@ const ArticleBody = ({ item, description }) => {
     },[item])
 
     return (
-        <main className = {`main_wrapper ${displayP ? "focus" : ""}`} onClick={() => {
+        <main className = {`main_wrapper ${!description ? displayP ? "focus" : "" : "" }`} onClick={() => {
             if(displayP){
                 setDisplayP(false)
                 window.open(item.url)

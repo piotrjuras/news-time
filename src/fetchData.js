@@ -34,6 +34,18 @@ export const regions = [
         regionCode: "gb",
         regionName: "United Kingdom"
     },
+    // {
+    //     regionCode: "de",
+    //     regionName: "Germany"
+    // },
+    // {
+    //     regionCode: "fr",
+    //     regionName: "France"
+    // },
+    // {
+    //     regionCode: "au",
+    //     regionName: "Australia"
+    // },
 ]
 export const JSONurls = [GENERAL, BUSINESS, SPORT, TECHNOLOGY, HEALTH, SCIENCE, ENTERTAINMENT];
 export const JSONlabels = ["General","Business", "Sport", "Technology", "Health", "Science", "Entertainment"];
