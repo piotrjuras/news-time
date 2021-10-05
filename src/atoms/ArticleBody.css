@@ -1,0 +1,43 @@
+.description{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.description p{
+    font-family: var(--main-font-family);
+    font-size: var(--paragraph-font-size);
+    padding: 5px 20px;
+    animation: fadein 1s forwards
+}
+
+@keyframes fadein{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+article main h2{
+    padding: 200px 15px 0px 15px;
+    margin: 0px;
+    font-family: var(--main-font-family);
+    font-size: var(--heading-font-size);
+    line-height: 21px;
+    text-align: left;
+    letter-spacing: 0.05em;
+    width: 350px;
+}
+
+
+@media (max-width: 600px){
+
+    section article main h2{
+        width: 70vw;
+    }
+
+}
+

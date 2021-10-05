@@ -1,0 +1,34 @@
+.alert{
+    text-align: center;
+    justify-content: center;
+    color: var(--label-color);
+}
+.alert span{
+    display: flex;
+    flex-direction: column;
+
+
+}
+.alert_sign{
+    color: red;
+    margin-top: 100px;
+    position: relative;
+    font-size: 100px;
+}
+.alert p{
+    font-size: var(--XL-font-size);
+    font-family: var(--main-font-family);
+    padding: 0px 20px;
+}
+.alert_sign::after{
+    position: absolute;
+    content: "";
+    width: 150px;
+    height: 150px;
+    top: -17px;
+    left: calc(50vw - 76px);
+    border: 5px solid red;
+    box-sizing: border-box;
+    border-radius: 75px;
+}
+

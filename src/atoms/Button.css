@@ -1,0 +1,28 @@
+button{
+    padding: 10px;
+    background-color: black;
+    border-radius: 10px;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    /* box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.10);
+    -webkit-box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.10); */
+    color: white;
+    background-color: var(--button-background-color);
+
+    font-family: poppins;
+    letter-spacing: 2px;
+    margin: 10px 0px;
+    cursor: pointer;
+    border: 0px;
+}
+
+.button_big{
+    /* width: 70vw; */
+    font-size: var(--button-font-size);
+    position: relative;
+    padding: 10px 30px;
+    display: flex;
+    margin: 20px auto;
+
+}
+

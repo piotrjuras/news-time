@@ -1,0 +1,50 @@
+article{
+
+    background-color: white;
+    margin: 10px 10px 30px 10px;
+    box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.15);
+    color: black;
+    text-decoration: none !important;
+    color: white;
+    position: relative;
+    z-index: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    text-shadow: 0px 0px 13px rgba(0,0,0,0.5);
+}
+
+article a{
+    color: white;
+    text-decoration: none !important;
+
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 90vh; */
+
+
+}
+
+article::before{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: var(--article-shadow-color);
+    border-radius: 10px;
+
+}
+
+
+
+.focus{
+    width: 95vw;
+}
+
+
+

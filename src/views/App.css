@@ -1,0 +1,93 @@
+
+.light {
+  --main-font-family: poppins;
+  --alternative1-font-family: 'Birthstone';
+
+  --XXXL-font-size: 34px;
+  --XXL-font-size: 30px;
+  --XL-font-size: 23px;
+
+  --heading-font-size: 15px bold;
+  --paragraph-font-size: 14px;
+
+  --XS-font-size: 12px;
+
+  --button-font-size: 20px;
+  --button-background-color: rgb(0,0,0);
+
+  --background-color-app: white;
+  --background-color: white;
+  --button-color: black;
+  --label-color: black;
+  --input-background-color: white;
+  --shadow-color: 0px 10px 20px 5px rgba(0, 0, 0, 0.1);
+  --article-shadow-color: linear-gradient(0deg, rgba(0,0,0,0.6432948179271709) 0%, rgba(0,0,0,0) 100%);
+
+  --search-hero-gradient-before: linear-gradient(0deg, rgb(0, 0, 0, 0.2) 40%, rgba(255,255,255,1) 100%);
+  --search-hero-gradient-after: linear-gradient(0deg, rgb(255, 255, 255, 1) 0%, rgba(0,0,0,0.2) 50%);
+}
+
+
+.dark{
+  --main-font-family: poppins;
+  --alternative1-font-family: 'Birthstone';
+
+  --XXXL-font-size: 34px;
+  --XXL-font-size: 30px;
+  --XL-font-size: 23px;
+
+  --heading-font-size: 15px bold;
+  --paragraph-font-size: 14px;
+
+  --XS-font-size: 12px;
+
+  --button-font-size: 20px;
+  --button-background-color: rgb(70,70,70);
+
+ 
+  --background-color-app: black;
+  --background-color: rgb(20, 20, 20);
+  --button-color: white;
+  --label-color: white;
+  --input-background-color: rgb(35, 35, 35);
+  --shadow-color: 0px 10px 20px 5px rgba(0, 0, 0, 0.1);
+  --article-shadow-color: linear-gradient(0deg, rgba(0,0,0,0.8432948179271709) 0%, rgba(0,0,0,0) 100%);
+
+  --search-hero-gradient-before: linear-gradient(0deg, rgb(0, 0, 0, 0.2) 40%, rgba(20,20,20,1) 100%);
+  --search-hero-gradient-after: linear-gradient(0deg, rgb(20, 20, 20, 1) 0%, rgba(0,0,0,0.2) 50%);
+}
+
+  
+
+
+body{
+
+  margin: 0px;
+  padding: 0px;
+  background-color: var(--background-color-app);
+
+}
+
+.html {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+.html::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+
+.App{
+  opacity: 0;
+  animation: appear .2s ease-in-out forwards;
+}
+
+
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
