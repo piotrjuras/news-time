@@ -1,30 +1,25 @@
+import React, {useEffect} from 'react';
+
+import './Loader.css';
+
+import PropTypes from 'prop-types';
 
 
-import React, {useEffect} from 'react'
 
-import './Loader.css'
-
-
-
-const Loader = () => {
+const Loader = ({ time }) => {
 
 
     useEffect(() => {
 
-        const myCheck = setTimeout(() => {
-            localStorage.setItem("error", "Oops! loading took longer than expected")
-            window.location.reload()
-        }, 10000);
+        const timeCheck = setTimeout(() => {
+            window.location.pathname = "";
+        }, time);
         
         return () => {
-            clearTimeout(myCheck)
+            clearTimeout(timeCheck)
         }
 
-    },[])
-
-
-
-
+    },[time])
 
 
     return (
@@ -35,7 +30,14 @@ const Loader = () => {
     )
 
 
+};
+
+Loader.defaultProps = {
+    time: 10000000
 }
 
+Loader.propTypes = {
+    time: PropTypes.number
+}
 
 export default Loader;

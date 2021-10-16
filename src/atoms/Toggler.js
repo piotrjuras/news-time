@@ -32,7 +32,7 @@ export const Toggler = () => {
 
     
     return (
-        <div className="toggle_container">dark theme
+        <div className="toggle_container">dark mode
             <div className="toggle_switch" onClick={() => togglerHandler()}>
                 <div className="outer">
                     <span className={`inner ${toggler ? "dark" : "light"}`}>

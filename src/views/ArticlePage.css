@@ -1,0 +1,106 @@
+.article_wrapper{
+    color: var(--label-color);
+    font-family: var(--main-font-family);
+    animation: appear .2s forwards;
+    opacity: 0;
+}
+.article_page{
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.article_padding{
+    height: calc(60vh - 80px);
+}
+
+
+
+.article_page header{
+    height: 60vh;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 0px;
+}
+
+.article_page .article_wrapper_main{
+    position: relative;
+    z-index: 10;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: var(--background-color);
+    margin: 0px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.article_page section{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.article_page .article_wrapper_main h1{
+    font-size: var(--XXL-font-size);
+    padding: 20px 30px 10px 30px;
+    margin: 0px;
+    letter-spacing: 1px
+}
+.article_page .article_wrapper_main p{
+    font-size: var(--L-font-size);
+    margin: 0px;
+    font-weight: normal;
+    text-shadow: none;
+    box-shadow: none;
+    padding: 15px;
+}
+
+.article_page .article_wrapper_main h4{
+    font-size: var(--heading-font-size);
+    background-color: inherit;
+    font-weight: normal;
+    text-shadow: none;
+    box-shadow: none;
+    padding: 0px 20px;
+    margin: 0px;
+}
+
+.article_page .bottom_wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-transform: uppercase;
+    margin: auto;
+
+}
+
+.article_page footer .bottom_wrapper p{
+    font-size: var(--paragraph-font-size);
+    background-color: var(--background-color);
+    max-width: 1000px;   
+}
+
+.article_page{
+    background-color: var(--background-color);
+    padding-bottom: 20px;
+}
+
+.article_page .more_articles h1{
+    font-size: var(--XXL-font-size);
+    padding: 20px 30px 10px 30px;
+    margin: 0px;
+    letter-spacing: 1px
+
+}
+
+.article_page .more_articles .news_cards .bottom_wrapper p{
+    margin: 0px;
+    padding: 0px;
+    font-size: var(--paragraph-font-size);
+}

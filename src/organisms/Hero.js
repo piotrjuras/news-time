@@ -14,8 +14,8 @@ const Hero = ( {data} ) => {
 
 
     useEffect(() =>{
-        window.addEventListener("scroll", () => {
 
+        const heroUpdate = () => {
             setOffset(1 - ( window.pageYOffset/window.innerHeight/10))
             setOpacity(1 - ( window.pageYOffset/window.innerHeight))
     
@@ -23,7 +23,14 @@ const Hero = ( {data} ) => {
             setOpacity(1 - ( window.pageYOffset/window.innerHeight))
 
             window.pageYOffset > window.innerHeight ? setRender(false) : setRender(true)
-        })
+        }
+        
+        window.addEventListener("scroll", heroUpdate)
+
+        return () => {
+            window.removeEventListener("scroll", heroUpdate)
+        }
+
     }, [])
 
 
@@ -39,7 +46,9 @@ const Hero = ( {data} ) => {
                     opacity: opacity,
                     borderRadius: 100 - offset*offset*offset*100
                 }}>
-                    <h1 className="hero_h1">{data.articles[0].title}</h1>
+                    <a href={data.articles[0].url} target="_blank" rel="noreferrer">
+                        <h1 className="hero_h1">{data.articles[0].title}</h1>
+                    </a>
                 </main>
                 ) : null
             }

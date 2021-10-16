@@ -2,10 +2,11 @@ article .bottom_wrapper{
     display: flex;
     justify-content: space-between;
     font-family: var(--main-font-family);
+    
+    padding: 15px;
 
 }
 article .bottom_wrapper .publisher{
-    padding: 15px;
     margin: 0px;
     text-transform: uppercase;
     line-height: 21px;
@@ -14,8 +15,7 @@ article .bottom_wrapper .publisher{
 
 }
 article .bottom_wrapper .publishedAt{
-    font-size: var(--XS-font-size);
-    padding: 15px;
+    font-size: var(--paragraph-font-size);
     margin: 0px;
     text-transform: uppercase;
     line-height: 21px;

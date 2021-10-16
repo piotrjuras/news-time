@@ -1,15 +1,15 @@
 import React from 'react'
-
-import '../atoms/Button.css'
-import './Alert.css'
+import Button from '../atoms/Button'
+import './Alert.css';
+import { language } from '../fetchData';
+import PropTypes from 'prop-types';
 
 
 const Alert = ({ text }) => {
 
     const handleRestart = () => {
         localStorage.removeItem("error");
-
-        window.location.reload(); 
+        window.location.reload();
     }
 
 
@@ -18,17 +18,18 @@ const Alert = ({ text }) => {
         <div className="alert">
             <h1 className="alert_sign">!</h1>
             <p className="alert_text">{text}</p>
-            <button className="button_big" onClick={() => handleRestart()}>try again</button>
+            <Button onClick={() => handleRestart()} label={language !== "pl" ? "try again" : "spróbuj ponownie"} />
         </div>
 
     )
-    
+}
 
+Alert.defaultProps = {
+    text: "Oops! Something went wrong"
+}
 
-
-
-
-
+Alert.propTypes = {
+    text: PropTypes.string,
 }
 
 export default Alert;

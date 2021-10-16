@@ -1,24 +1,28 @@
 import React from 'react';
 
-import Article from './Article'
+import Article from './Article';
 
 import './Section.css';
 
 
-import { pseudonim } from '../fetchData'
+import { pseudonim, language } from '../fetchData'
 
 
 const Section = ( { data } ) => {
 
- 
 
     return(
 
           <section id={data.title} className="row">
 
-            <h1 className="section_name">hello {pseudonim},<br/>{data.title} news</h1>
+            {language !== "pl" ? (
+              <h1 className="section_name">hello {pseudonim},<br/>{data.title} for you</h1>
+            ) : (
+              <h1 className="section_name">cześć {pseudonim},<br/>{data.title} dla Ciebie</h1>
+            )}
+            
             <div className="news_cards" style={sectionsStyles}>
-              {data.articles.map((item, index) =>  <Article item={item} description={false} key={index}/> )}
+              {data.articles.map((item, index) => <Article item={item} key={index+item.title}/> )}
             </div>
 
 

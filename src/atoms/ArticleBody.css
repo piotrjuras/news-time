@@ -1,16 +1,9 @@
 .description{
-
     display: flex;
     flex-direction: column;
     align-items: center
 }
 
-.description p{
-    font-family: var(--main-font-family);
-    font-size: var(--paragraph-font-size);
-    padding: 5px 20px;
-    animation: fadein 1s forwards
-}
 
 @keyframes fadein{
     from{
@@ -22,13 +15,12 @@
 }
 
 article main h2{
-    padding: 200px 15px 0px 15px;
+    padding: 180px 15px 0px 15px;
     margin: 0px;
     font-family: var(--main-font-family);
     font-size: var(--heading-font-size);
-    line-height: 21px;
     text-align: left;
-    letter-spacing: 0.05em;
+    letter-spacing: 1px;
     width: 350px;
 }
 
@@ -38,9 +30,7 @@ article main h2{
     section article main h2{
         width: 70vw;
     }
-    .focus{
-        width: 95vw;
-    }
+
 
 }
 

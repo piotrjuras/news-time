@@ -24,7 +24,7 @@
 .hero_h1{
     padding: 20px;
     position: absolute;
-    bottom: 70px;
+    bottom: 80px;
     font-family: var(--main-font-family);
     font-weight: bold;
     font-size: var(--XL-font-size);
@@ -32,4 +32,5 @@
     letter-spacing: 1px;
     color: white;
     text-shadow: 0px 0px 13px rgba(0,0,0,0.5);
+    margin: 0px;
 }

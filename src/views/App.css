@@ -6,6 +6,8 @@
   --XXXL-font-size: 34px;
   --XXL-font-size: 30px;
   --XL-font-size: 23px;
+  --L-font-size: 18px;
+
 
   --heading-font-size: 15px bold;
   --paragraph-font-size: 14px;
@@ -35,6 +37,8 @@
   --XXXL-font-size: 34px;
   --XXL-font-size: 30px;
   --XL-font-size: 23px;
+  --L-font-size: 18px;
+
 
   --heading-font-size: 15px bold;
   --paragraph-font-size: 14px;
@@ -81,7 +85,10 @@ body{
   animation: appear .2s ease-in-out forwards;
 }
 
-
+a{
+  color: var(--label-color);
+  text-decoration: none;
+}
 
 @keyframes appear {
   from {

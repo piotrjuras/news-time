@@ -1,24 +1,27 @@
 
 
 const usrSettings = JSON.parse(localStorage.getItem("usr_settings"));
-export let {pseudonim, region, regionFullName, searchWord, category} = usrSettings || {};
+export let {pseudonim, region, regionFullName, searchWord, category, language, languageFullName} = usrSettings || {};
+
+export const subfolder = "/news";
+console.warn("!!!!!!---Change subfoler in fetchData.js before production---!!!!!!");
 
 
+const GENERAL = `${subfolder}/jsonArticles/general/${region}.json`;
 
-const GENERAL = `./jsonArticles/general/${region}.json`;
+const BUSINESS = `${subfolder}/jsonArticles/business/${region}.json`;
 
-const BUSINESS = `./jsonArticles/business/${region}.json`;
+const SPORT = `${subfolder}/jsonArticles/sports/${region}.json`;
 
-const SPORT = `./jsonArticles/sports/${region}.json`;
+const TECHNOLOGY = `${subfolder}/jsonArticles/technology/${region}.json`;
 
-const TECHNOLOGY = `./jsonArticles/technology/${region}.json`;
+const HEALTH = `${subfolder}/jsonArticles/health/${region}.json`;
 
-const HEALTH = `./jsonArticles/health/${region}.json`;
+const SCIENCE = `${subfolder}/jsonArticles/science/${region}.json`;
 
-const SCIENCE = `./jsonArticles/science/${region}.json`;
+const ENTERTAINMENT = `${subfolder}/jsonArticles/entertainment/${region}.json`;
 
-const ENTERTAINMENT = `./jsonArticles/entertainment/${region}.json`;
-
+export const lastUpdate = `${subfolder}/jsonArticles/lastUpload.json`;
 
 
 export const regions = [
@@ -35,8 +38,13 @@ export const regions = [
         regionName: "United Kingdom"
     },
 ]
+
 export const JSONurls = [GENERAL, BUSINESS, SPORT, TECHNOLOGY, HEALTH, SCIENCE, ENTERTAINMENT];
-export const JSONlabels = ["General","Business", "Sport", "Technology", "Health", "Science", "Entertainment"];
+
+export const JSONlabels = ["General", "Business", "Sport", "Technology", "Health", "Science", "Entertainment"];
+
+export const JSONlabelsPL = ["Ogólne", "Biznes", "Sport", "Technologia", "Zdrowie", "Nauka", "Rozrywka"];
+
 
 
 

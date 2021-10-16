@@ -8,7 +8,7 @@ const SearchHero = ({ backgroundPic }) => {
 
     return (
         <section className="search_section">
-                <main style={{backgroundImage: `url(${backgroundPic.urlToImage}), url('https://icon-library.com/images/no-image-icon/no-image-icon-20.jpg')`,
+                <main style={{backgroundImage: `url(${backgroundPic.urlToImage})`,
                     position: "relative"
                 }}> 
                     <a href={backgroundPic.url} target="_blank" rel="noreferrer">

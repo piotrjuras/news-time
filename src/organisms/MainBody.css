@@ -1,6 +1,5 @@
 .main_body{
     position: relative;
-    /* top: calc(100vh - 80px); */
     background-color: var(--background-color);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -29,7 +28,7 @@ header h1{
     font-size: var(--XL-font-size);
     text-align: center;
     letter-spacing: 2px;
-    /* text-transform: uppercase; */
+
 
 
 }
@@ -37,10 +36,6 @@ header h1{
 @media (min-width: 600px){
 
     .main_body{
-        /* display: flex; */
-        /* flex-wrap: wrap; */
-        /* overflow: scroll; */
-        /* max-width: 1600px; */
         margin: auto;
       }
 
@@ -53,7 +48,6 @@ header h1{
     width: 150px;
     height: 0px;
     margin-top: -10px;
-    /* top: 50%; */
     border-radius: 2px;
 }
 

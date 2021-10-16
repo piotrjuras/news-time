@@ -8,120 +8,21 @@ nav{
     transition: .3s transform ease-in-out;
     overflow: scroll;
     color: var(--label-color);
-}
+    font-family: var(--main-font-family);
 
+}
 
 .opened{
     transform: translateX(0px);
-
 }
 
 
-
-.menu_button{
-    width: 50px;
-    height: 50px;
-    background-color: var(--input-background-color);
-    position: fixed;
-    right: 20px;
-    top: 20px;
-    z-index: 200;
-    transform: translateX(70px);
-    transition: transform .3s ease-in-out;
-    border-radius: 25px;
-    -webkit-appearance: none;
-    box-shadow: var(--shadow-color);
-    -webkit-box-shadow: var(--shadow-color);
-    cursor: pointer;
-}
-.unhidden{
-    transform: translateX(0px);
-}
-.menu_button div{
-    width: 25px;
-    height: 2px;
-    background-color: var(--label-color);
-    position: relative;
-    margin: 15px 10px 5px 18px;
-    transition: .3s all;
-
-}
-
-.menu_button div::before{
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    content: " ";
-    width: 25px;
-    height: 2px;
-    background-color: var(--label-color);
-    transition: .3s all;
-}
-
-.menu_button{
-    margin: 0px;
-    padding: 0px;
-    border: none;
-
-
-}
-nav .highlighted{
-    position: fixed;
-    /* transform: translateY(-50vh); */
-    top: 0px;
-    background-color: var(--background-color);
-    height: 100vh;
-    width: 100%;
-    overflow-X: scroll;
-
-}
-nav .highlighted span{
-    max-width: 1000px;
-    margin: auto;
-    
-}
-
-nav h1{
-    font-family: var(--main-font-family);
-    font-size: var(--XXL-font-size);
-    padding-top: 50px;
-    margin: 10px 30px
-}
-
-nav .highlighted p{
-    font-family: var(--main-font-family);
-    font-size: var(--XL-font-size);
-    margin: 15px;
-}
-
-
-
-.close{
-    transition: all .5s;
-}
-.close div{
-    width: 25px;
-    height: 2px;
-    margin: 10px 10px 8px 13px;
-    transform: rotate(45deg);
-}
-.close div::before{
-    width: 25px;
-    height: 2px;
-    top: 0px;
-    left: 0px;
-    transform: rotate(-90deg);
-
-}
-
-
-
-ul{
+nav ul{
     list-style-type: none;
     margin: 0px;
-    padding: 0px 0px 40px 0px;
+    padding: 0px 0px 20px 0px;
 }
-ul li{
+nav ul li{
     background-color: var(--input-background-color);
     -webkit-appearance: none;
     box-shadow: var(--shadow-color);
@@ -135,50 +36,24 @@ ul li{
     font-size: 25px;
     margin: 10px auto;
     outline: none;
-    font-family: var(--main-font-family);
     position: relative;
     cursor: pointer;
-
-
-    /* text-align: right; */
-
-
-    /* padding: 10px;
-    text-align: right;
-    font-family: var(--main-font-family);
-    width: 90vw;
-    font-style: normal;
-    font-weight: bold;
-    font-size: var(--XXL-font-size);
-    letter-spacing: 5px;
-    line-height: 50px;
-    margin-right: 40px;
-    cursor: pointer; */
+    color: var(--label-color);
+    text-align: left;
 }
 
-nav span{
-    display: flex;
-    flex-direction: column;
-
+nav h1{
+    font-size: var(--XXL-font-size);
+    padding-top: 60px;
+    padding-bottom: 10px;
+    margin: 0px 30px;
 }
 nav p{
-    font-family: var(--main-font-family);
-    font-size: var(--XS-font-size);
-    margin: 10px;
-}
-nav div h3{
-    margin: 5px 15px;
-    padding: 0px;
-    font-family: var(--main-font-family);
-    font-size: var(--paragraph-font-size);
-
+    padding: 0px 10px
 }
 
-a{
-    color: var(--label-color);
-    text-decoration: none;
-    height: fit-content;
-}
+
+
 
 @media (min-width: 700px){
     nav{
@@ -191,3 +66,4 @@ a{
         max-width: 90%;
     }
 }
+

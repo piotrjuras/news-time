@@ -1,11 +1,12 @@
 .toggle_container{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    justify-items: center;
     padding: 0px 30px;
     font-size: var(--XL-font-size);
     font-family: var(--main-font-family);
-    /* margin-top: 10vh; */
+    max-width: 400px;
 }
 
 .toggle_switch{
@@ -15,34 +16,34 @@
 
 }
 .toggle_switch .outer{
-    width: 90px;
-    height: 50px;
+    width: 65px;
+    height: 40px;
     border: 1px solid var(--label-color);
     border-radius: 25px;
     box-sizing: border-box;
 }
-.toggle_switch .outer::before{
+/* .toggle_switch .outer::before{
     content: "on";
     position: absolute;
-    font-size: var(--button-font-size);
-    top: 10px;
+    font-size: var(--paragraph-font-size);
+    top: 5px;
     right: 10px;
 }
 .toggle_switch .outer:after{
     content: "off";
     position: absolute;
-    font-size: var(--button-font-size);
-    top: 10px;
+    font-size: var(--paragraph-font-size);
+    top: 5px;
     left: 10px;
     
-}
+} */
 .toggle_switch .outer .inner{
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
     position: absolute;
     background-color: var(--label-color);
-    top: 5px;
-    left: 5px;
+    top: 2px;
+    left: 2px;
     transform: translateX(0px);
     transition: transform .2s;
     border-radius: 20px;
@@ -50,5 +51,5 @@
 }
 
 .toggle_switch .outer .inner.light{
-    transform: translateX(40px);
+    transform: translateX(25px);
 }
