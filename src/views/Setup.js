@@ -32,7 +32,6 @@ const Startup = () => {
 
     }
 
-    // if(window.location.pathname ==)
 
     return <SetupForm setScreen={setScreen} passDataToJSON={passDataToJSON} currScreenNum={currentScreen} />
     
