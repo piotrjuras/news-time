@@ -154,7 +154,7 @@ const SetupForm = ({setScreen, passDataToJSON, currScreenNum}) => {
                         </>
                     ) : (
                         <>
-                        <h2>Cześć,</h2>
+                        <h2>Witaj,</h2>
                         <p style={{textAlign:"left"}}>news-time to aplikacja stworzona przez Piotra Jurasa. Służy do czytania i szukania najnowszych informacji dostarczanych z całego świata.  <br/><br/>Aby zacząć musisz powiedzieć co Cię interesuje</p>
                         </>
                     ) }
@@ -178,11 +178,16 @@ const SetupForm = ({setScreen, passDataToJSON, currScreenNum}) => {
             <section id="register">
 
                 <div className="bottom_wrapper">
-                    <h2>Cookies...</h2>
                     { language !== "pl" ? (
-                        <p style={{textAlign:"left"}}>by using this news-reading app you accept that we will store <b>cookies</b> on your device provided by our news platforms. Your data won't be sent to our servers and we use them only locally to predefine your default settings</p>
+                        <>
+                            <h2>Cookies policy</h2>
+                            <p style={{textAlign:"left"}}>by using this news-reading app you accept that we will store <b>cookies</b> on your device provided by our news platforms. Your data won't be sent to our servers and we use them only locally to predefine your default settings</p>
+                        </>
                     ) : (
-                        <p style={{textAlign:"left"}}>używając tej aplikacji, zgadzasz się, że będziemy przechowywać pliki <b>cookies</b> na Twoim urządzeniu dostarczane przez portale infomacyjne. Twoje dane nie będą wysyłane do naszych serwerów i będziemy ich używać tylko lokalnie do zapisania domyślnych ustawień</p>
+                        <>
+                            <h2>Polityka cookies</h2>
+                            <p style={{textAlign:"left"}}>używając tej aplikacji, zgadzasz się, że będziemy przechowywać pliki <b>cookies</b> na Twoim urządzeniu dostarczane przez portale infomacyjne. Twoje dane nie będą wysyłane do naszych serwerów i będziemy ich używać tylko lokalnie do zapisania domyślnych ustawień</p>
+                        </>
                     ) }
 
                     <Button onClick={() => setScreenNum(currScreenNum+1)} label = {language !== "pl" ? "I'm okay with that" : "Rozumiem, dobrze"} style={{marginTop: "20px"}} />
