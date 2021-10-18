@@ -35,9 +35,6 @@ const SetupForm = ({setScreen, passDataToJSON, currScreenNum}) => {
             }, 2500)
         }
 
-
-        console.log(window.location.pathname.slice(0, 8))
-
         if(window.location.pathname.length > 20){
             setArticleProvided(true)
         }
@@ -153,12 +150,12 @@ const SetupForm = ({setScreen, passDataToJSON, currScreenNum}) => {
                 { language !== "pl" ? (
                         <>
                         <h2>Hello,</h2>
-                        <p style={{textAlign:"left"}}>news-time made by Piotr Juras is news-reading-app. You can use it to read and search for latest news provided from all over the world. <br/><br/>To start you must tell what you are interested in</p>
+                        <p style={{textAlign:"left"}}>news-time is news-reading-app made by Piotr Juras. You can use it to read and search for latest news provided from all over the world. <br/><br/>To start you must tell what you are interested in</p>
                         </>
                     ) : (
                         <>
                         <h2>Cześć,</h2>
-                        <p style={{textAlign:"left"}}>news-time stworzona przez Piotr Juras. To aplikacja służąca do czytania i szukania najnowszych informacji dostarczanych z całego świata.  <br/><br/>Aby zacząć musisz powiedzieć co Cię interesuje</p>
+                        <p style={{textAlign:"left"}}>news-time to aplikacja stworzona przez Piotra Jurasa. Służy do czytania i szukania najnowszych informacji dostarczanych z całego świata.  <br/><br/>Aby zacząć musisz powiedzieć co Cię interesuje</p>
                         </>
                     ) }
 
