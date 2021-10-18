@@ -3,7 +3,7 @@ import React from 'react'
 
 import "./ArticleFooter.css"
 
-const checkSpelling = ( date ) => {
+const correctDateFormat = ( date ) => {
 
     const newDate = new window.Date(date);
 
@@ -23,7 +23,7 @@ const ArticleFooter = ( {date, item} ) => {
 
     return (
         <div className = "bottom_wrapper">
-            <p className="publishedAt">{checkSpelling(date)}</p>
+            <p className="publishedAt">{correctDateFormat(date)}</p>
             <p className="publisher">{item.source.name}</p>
         </div>
     )

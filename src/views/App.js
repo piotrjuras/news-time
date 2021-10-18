@@ -10,7 +10,7 @@ import Alert from '../views/Alert';
 
 import Helmet from 'react-helmet';
 
-import { searchWord, category, lastUpdate, subfolder } from '../fetchData';
+import { searchWord, category, lastUpdate } from '../fetchData';
 
 import '../views/App.css';
 import Preferences from '../molecules/Preferences';
@@ -47,7 +47,7 @@ const App = ({ dataAll }) => {
     if(dataAll && dataToRender){
 
         return (
-            <Router basename={subfolder}>
+            <Router basename="/news">
                 <Switch>
                     <Route exact path = "/">
 

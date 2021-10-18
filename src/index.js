@@ -10,3 +10,5 @@ ReactDOM.render(
   <Root />,
   document.getElementById('root')
 );
+
+console.log("made_by_Piotr_Juras")

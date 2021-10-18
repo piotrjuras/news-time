@@ -3,25 +3,29 @@
 const usrSettings = JSON.parse(localStorage.getItem("usr_settings"));
 export let {pseudonim, region, regionFullName, searchWord, category, language, languageFullName} = usrSettings || {};
 
-export const subfolder = "/news";
-console.warn("!!!!!!---Change subfoler in fetchData.js before production---!!!!!!");
+// const url = "http://piotr.juras.pl/news";
+const url = "";
+
+if(url === ""){
+    console.warn("!!!!---- CHANGE url TO ABSOLUTE BEFORE PRODUCTION ----!!!!")
+}
 
 
-const GENERAL = `${subfolder}/jsonArticles/general/${region}.json`;
+const GENERAL = `${url}/jsonArticles/general/${region}.json`;
 
-const BUSINESS = `${subfolder}/jsonArticles/business/${region}.json`;
+const BUSINESS = `${url}/jsonArticles/business/${region}.json`;
 
-const SPORT = `${subfolder}/jsonArticles/sports/${region}.json`;
+const SPORT = `${url}/jsonArticles/sports/${region}.json`;
 
-const TECHNOLOGY = `${subfolder}/jsonArticles/technology/${region}.json`;
+const TECHNOLOGY = `${url}/jsonArticles/technology/${region}.json`;
 
-const HEALTH = `${subfolder}/jsonArticles/health/${region}.json`;
+const HEALTH = `${url}/jsonArticles/health/${region}.json`;
 
-const SCIENCE = `${subfolder}/jsonArticles/science/${region}.json`;
+const SCIENCE = `${url}/jsonArticles/science/${region}.json`;
 
-const ENTERTAINMENT = `${subfolder}/jsonArticles/entertainment/${region}.json`;
+const ENTERTAINMENT = `${url}/jsonArticles/entertainment/${region}.json`;
 
-export const lastUpdate = `${subfolder}/jsonArticles/lastUpload.json`;
+export const lastUpdate = `${url}/jsonArticles/lastUpload.json`;
 
 
 export const regions = [

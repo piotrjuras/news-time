@@ -9,7 +9,7 @@ const Alert = ({ text }) => {
 
     const handleRestart = () => {
         localStorage.removeItem("error");
-        window.location.reload();
+        window.location.pathname = "/news";
     }
 
 

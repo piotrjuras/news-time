@@ -18,11 +18,8 @@ const SetupForm = ({setScreen, passDataToJSON, currScreenNum}) => {
 
     const [complete, setComplete] = useState(false)
 
-
-     
-
+    const [articleProvided, setArticleProvided] = useState(false)
     
-
         
     useEffect(() => {
 
@@ -36,6 +33,13 @@ const SetupForm = ({setScreen, passDataToJSON, currScreenNum}) => {
                 }
                 setTextIndex(index)
             }, 2500)
+        }
+
+
+        console.log(window.location.pathname.slice(0, 8))
+
+        if(window.location.pathname.length > 20){
+            setArticleProvided(true)
         }
 
 
@@ -129,6 +133,7 @@ const SetupForm = ({setScreen, passDataToJSON, currScreenNum}) => {
                     <span className="select" id="en">English</span>
                     <span className="select" id="pl">Polski</span>
                 </main>
+                {articleProvided ? <p>{language !== "pl" ? "top open this article you must setup your preferences" : "aby otworzyć ten link musisz ustawić swoje preferencje"}</p> : null}
 
 
                 { dataToJSON.language ? <Button onClick={() => setScreenNum(currScreenNum+1)} label = {language !== "pl" ? `set ${dataToJSON.languageFullName} language` : `ustaw język ${dataToJSON.languageFullName}` } style={{marginTop: "20px"}} /> : null }
