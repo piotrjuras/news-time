@@ -11,13 +11,17 @@ import { useParams, useHistory } from 'react-router-dom';
 import {Helmet} from "react-helmet";
 
 
+
 const ArticlePage = ({ dataAll }) => {
 
     const [article, setArticle] = useState(null);
 
+
     const { title } = useParams();
     const history = useHistory();
     const articleFound = [];
+
+
 
 
     useEffect(() => {
@@ -33,6 +37,8 @@ const ArticlePage = ({ dataAll }) => {
         })
 
         if(articleFound.length === 0) localStorage.setItem("error", "Oops! the link you are trying to open is either outdated or it belongs to different region than yours")
+
+
 
     })
 
@@ -80,7 +86,7 @@ const ArticlePage = ({ dataAll }) => {
             </div>
         )
     } else {
-        return <Loader time={500} />
+        return <Loader time={500}/>
     }
 
 }

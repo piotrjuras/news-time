@@ -63,9 +63,6 @@ const Root = () => {
         })
 
         setDataAll(data)
-        console.log(data)
-
-
 
     }
 

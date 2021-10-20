@@ -12,7 +12,7 @@ const Loader = ({ time }) => {
     useEffect(() => {
 
         const timeCheck = setTimeout(() => {
-            window.location.pathname = "";
+            window.location.reload();
         }, time);
         
         return () => {
@@ -33,7 +33,7 @@ const Loader = ({ time }) => {
 };
 
 Loader.defaultProps = {
-    time: 10000000
+    time: 10000
 }
 
 Loader.propTypes = {

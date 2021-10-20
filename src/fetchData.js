@@ -3,8 +3,8 @@
 const usrSettings = JSON.parse(localStorage.getItem("usr_settings"));
 export let {pseudonim, region, regionFullName, searchWord, category, language, languageFullName} = usrSettings || {};
 
-// const url = "http://piotr.juras.pl/news";
-const url = "";
+const url = "http://piotr.juras.pl/news";
+// const url = "";
 
 if(url === ""){
     console.warn("!!!!---- CHANGE url TO ABSOLUTE BEFORE PRODUCTION ----!!!!")
