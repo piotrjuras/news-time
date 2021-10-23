@@ -65,20 +65,12 @@
 
 
 body{
-
   margin: 0px;
   padding: 0px;
   background-color: var(--background-color-app);
-
+  overflow-X: hidden;
 }
 
-.html {
-  -ms-overflow-style: none;  /* Internet Explorer 10+ */
-  scrollbar-width: none;  /* Firefox */
-}
-.html::-webkit-scrollbar { 
-  display: none;  /* Safari and Chrome */
-}
 
 .App{
   opacity: 0;
@@ -89,6 +81,7 @@ a{
   color: var(--label-color);
   text-decoration: none;
 }
+
 
 @keyframes appear {
   from {

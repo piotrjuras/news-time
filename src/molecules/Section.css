@@ -2,7 +2,6 @@
     font-family: Poppins;
     font-size: var(--XXL-font-size);
     line-height: 60px;
-    /* text-align: center; */
     letter-spacing: 1px;
     padding: 10px 30px;
     margin: 0px;
@@ -11,7 +10,6 @@
 @media (min-width: 600px){
 
     .news_card{
-        /* width: 400px; */
         margin: 15px 15px;
         height: auto;
       }
@@ -19,4 +17,21 @@
     .news_cards{
         padding-bottom: 40px;
     }
+
+}
+
+.news_cards::-webkit-scrollbar {
+    display: none;
+}
+  
+.news_cards::-webkit-scrollbar-track {
+    display: none;
+}
+   
+.news_cards::-webkit-scrollbar-thumb {
+    display: none;
+}
+  
+.news_cards::-webkit-scrollbar-thumb:hover {
+    display: none;
 }
