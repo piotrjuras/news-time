@@ -6,9 +6,8 @@ export let {pseudonim, region, regionFullName, searchWord, category, language, l
 const url = "http://piotr.juras.pl/news";
 // const url = "";
 
-if(url === ""){
-    console.warn("!!!!---- CHANGE url TO ABSOLUTE BEFORE PRODUCTION ----!!!!")
-}
+if(url === "") console.warn("!!!!---- CHANGE url TO ABSOLUTE BEFORE PRODUCTION ----!!!!")
+
 
 
 const GENERAL = `${url}/jsonArticles/general/${region}.json`;

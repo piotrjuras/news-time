@@ -10,17 +10,28 @@ const Search = ({ dataAll, searchQuery }) => {
 
 
     const foundedArray = [];
-    const searchQueryRegExp = RegExp(searchQuery,"ig")
 
-    dataAll.forEach((dataSection, sectionIndex) => {
-        dataSection.articles.forEach((article, articleIndex) => {              
-            const articleText = String(`${article.title} ${article.description}`);
-            const founded = articleText.match(searchQueryRegExp)
-            if(founded){
-                foundedArray.push(dataAll[sectionIndex].articles[articleIndex])
-            }
-        })
-    })
+    if(searchQuery !== null && searchQuery.length > 0){
+
+        searchQuery.split(" ").forEach(word => {
+
+            const searchQueryRegExp = RegExp(word,"ig")
+
+            dataAll.forEach((dataSection, sectionIndex) => {
+                dataSection.articles.forEach((article, articleIndex) => {              
+                    const articleText = String(`${article.title} ${article.description}`);
+                    const founded = articleText.match(searchQueryRegExp)
+                    if(founded){
+                        if(!foundedArray.includes(dataAll[sectionIndex].articles[articleIndex])) foundedArray.push(dataAll[sectionIndex].articles[articleIndex])
+                    }
+                })
+            })
+
+
+        });
+    
+    }
+
 
 
 
