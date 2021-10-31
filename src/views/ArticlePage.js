@@ -36,7 +36,7 @@ const ArticlePage = ({ dataAll }) => {
             })
         })
 
-        if(articleFound.length === 0) localStorage.setItem("error", "Oops! the link you are trying to open is either outdated or it belongs to different region than yours")
+        if(articleFound.length === 0) localStorage.setItem("error", language !== "pl" ? "Oops! the link you are trying to open is either outdated or it belongs to different region than yours" : "Oops! link, który chcesz otworzyć wygasł albo należy do innego regionu niż Twój")
 
 
 
