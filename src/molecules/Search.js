@@ -1,8 +1,7 @@
-import React, {useState, useEffect} from "react"
+import React, {useState, useEffect} from "react";
 import SearchHero from "./SearchHero";
-import Article from "./Article"
-
-import { language } from '../fetchData'
+import Article from "./Article";
+import { language } from '../fetchData';
 
 
 const Search = ({ dataAll, searchQuery }) => {

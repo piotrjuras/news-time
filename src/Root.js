@@ -33,7 +33,7 @@ const Root = () => {
             .catch(
                 (error) => {
                     console.log(error)
-                    localStorage.setItem("error", `Oops! something went wrong: ${error}`);
+                    localStorage.setItem("error", language !== "pl" ? `Oops! something went wrong: ${error}` : `Oops! coś poszło nie tak: ${error}`);
                     setError(true)
                 }
             )

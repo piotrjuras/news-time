@@ -1,8 +1,6 @@
 import React, {useEffect} from 'react';
-
-import './Loader.css';
-
 import PropTypes from 'prop-types';
+import './Loader.css';
 
 
 
@@ -33,7 +31,7 @@ const Loader = ({ time }) => {
 };
 
 Loader.defaultProps = {
-    time: 10000
+    time: 15000,
 }
 
 Loader.propTypes = {

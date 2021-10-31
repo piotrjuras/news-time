@@ -1,8 +1,6 @@
-import React from 'react'
+import React from 'react';
 import Section from '../molecules/Section';
-
-
-import "./MainBody.css"
+import "./MainBody.css";
 
 const MainBody = ( {dataToRender, header} ) => {
 

@@ -1,10 +1,8 @@
 import React from 'react';
-
-import ArticleFooter from '../atoms/ArticleFooter'
-import ArticleBody from '../atoms/ArticleBody'
-
-import './Article.css';
+import ArticleFooter from '../atoms/ArticleFooter';
+import ArticleBody from '../atoms/ArticleBody';
 import { Link, useHistory } from 'react-router-dom';
+import './Article.css';
 
 
 

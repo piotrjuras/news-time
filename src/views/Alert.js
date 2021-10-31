@@ -1,5 +1,5 @@
-import React from 'react'
-import Button from '../atoms/Button'
+import React from 'react';
+import Button from '../atoms/Button';
 import './Alert.css';
 import { language } from '../fetchData';
 import PropTypes from 'prop-types';
@@ -25,7 +25,7 @@ const Alert = ({ text }) => {
 }
 
 Alert.defaultProps = {
-    text: "Oops! Something went wrong"
+    text: language !== "pl" ? "Oops! Something went wrong" : "Oops! Coś poszło nie tak"
 }
 
 Alert.propTypes = {

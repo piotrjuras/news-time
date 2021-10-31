@@ -1,7 +1,6 @@
 import React from 'react'
 import { language } from '../fetchData';
-
-import Article from '../molecules/Article'
+import Article from '../molecules/Article';
 
 const MoreArticles = ({ dataAll, source }) => {
 

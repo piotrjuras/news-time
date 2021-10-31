@@ -1,6 +1,5 @@
-import React from 'react'
-
-import "./SearchHero.css"
+import React from 'react';
+import "./SearchHero.css";
 
 
 const SearchHero = ({ backgroundPic }) => {

@@ -12,8 +12,8 @@ import Helmet from 'react-helmet';
 
 import { searchWord, category, lastUpdate } from '../fetchData';
 
-import '../views/App.css';
 import Preferences from '../molecules/Preferences';
+import '../views/App.css';
 
 
 

@@ -1,9 +1,7 @@
-import React, {useState, useEffect} from 'react'
-
+import React, {useState, useEffect} from 'react';
 import { regions, JSONlabels, JSONlabelsPL } from '../fetchData'; 
-
-import { Toggler } from '../atoms/Toggler'
-import Button from '../atoms/Button'
+import { Toggler } from '../atoms/Toggler';
+import Button from '../atoms/Button';
 
 
 const SetupForm = ({setScreen, passDataToJSON, currScreenNum}) => {

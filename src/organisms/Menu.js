@@ -1,14 +1,8 @@
 import React, { useState } from 'react';
-
-
-
-import './Menu.css';
-
-import { language } from '../fetchData'
-
-
-import { Link } from 'react-router-dom'
+import { language } from '../fetchData';
+import { Link } from 'react-router-dom';
 import Button from '../atoms/Button';
+import './Menu.css';
 
 
 const Menu = ( {data, sendFunc, lastUpload} ) => {
@@ -59,9 +53,9 @@ const Menu = ( {data, sendFunc, lastUpload} ) => {
 
 
                 {language !== "pl" ? (
-                    <p style={{fontSize:"var(--paragraph-font-size"}}>last news sync: {lastUpload}</p>
+                    <p style={{fontSize: "var(--paragraph-font-size"}}>last news sync: {lastUpload}</p>
                 ) : (
-                    <p style={{fontSize:"var(--paragraph-font-size"}}>ostatnia synchronizacja: {lastUpload}</p>
+                    <p style={{fontSize: "var(--paragraph-font-size"}}>ostatnia synchronizacja: {lastUpload}</p>
                 )}
             </nav>
         </>

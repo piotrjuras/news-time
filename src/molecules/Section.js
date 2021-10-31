@@ -1,14 +1,10 @@
 import React from 'react';
-
 import Article from './Article';
-
+import { pseudonim, language } from '../fetchData';
 import './Section.css';
 
 
-import { pseudonim, language } from '../fetchData'
-
-
-const Section = ( { data } ) => {
+const Section = ({ data }) => {
 
 
     return(

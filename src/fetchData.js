@@ -1,5 +1,3 @@
-
-
 const usrSettings = JSON.parse(localStorage.getItem("usr_settings"));
 export let {pseudonim, region, regionFullName, searchWord, category, language, languageFullName} = usrSettings || {};
 

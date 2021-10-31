@@ -1,10 +1,7 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect} from 'react';
 import { language } from '../fetchData';
-import Search from '../molecules/Search'
-
-
-
-import './SearchBody.css'
+import Search from '../molecules/Search';
+import './SearchBody.css';
 
 
 

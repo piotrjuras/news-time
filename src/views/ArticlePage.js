@@ -8,7 +8,7 @@ import Loader from './Loader';
 import MoreArticles from '../organisms/MoreArticles'
 import { useParams, useHistory } from 'react-router-dom';
 
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 
 
 

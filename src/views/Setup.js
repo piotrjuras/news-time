@@ -1,11 +1,6 @@
-import React, {useState } from 'react'
-
-
-
-import SetupForm from '../organisms/SetupForm'
-
-
-import './Setup.css'
+import React, {useState } from 'react';
+import SetupForm from '../organisms/SetupForm';
+import './Setup.css';
 
 
 const Startup = () => {
