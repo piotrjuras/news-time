@@ -147,13 +147,13 @@ const SetupForm = ({setScreen, passDataToJSON, currScreenNum}) => {
                 <div className="bottom_wrapper">
                 { language !== "pl" ? (
                         <>
-                        <h2>Hello,</h2>
-                        <p style={{textAlign:"left"}}>news-time is news-reading-app made by Piotr Juras. You can use it to read and search for latest news provided from all over the world. <br/><br/>To start you must tell what you are interested in</p>
+                            <h2>Hello,</h2>
+                            <p style={{textAlign:"left"}}>news-time is news-reading-app made by Piotr Juras. You can use it to read and search for latest news provided from all over the world. <br/><br/>To start you must tell what you are interested in</p>
                         </>
                     ) : (
                         <>
-                        <h2>Witaj,</h2>
-                        <p style={{textAlign:"left"}}>news-time to aplikacja stworzona przez Piotra Jurasa. Służy do czytania i szukania najnowszych informacji dostarczanych z całego świata.  <br/><br/>Aby zacząć musisz powiedzieć co Cię interesuje</p>
+                            <h2>Witaj,</h2>
+                            <p style={{textAlign:"left"}}>news-time to aplikacja stworzona przez Piotra Jurasa. Służy do czytania i szukania najnowszych informacji dostarczanych z całego świata.  <br/><br/>Aby zacząć musisz powiedzieć co Cię interesuje</p>
                         </>
                     ) }
 
@@ -202,7 +202,7 @@ const SetupForm = ({setScreen, passDataToJSON, currScreenNum}) => {
         return(
             
             <section id="register">
-                { language !== "pl" ? <h2>What is your nickname?</h2> : <h2>Jak jest Twój nick?</h2> }
+                { language !== "pl" ? <h2>What is your nickname?</h2> : <h2>Jaki jest Twój nick?</h2> }
                 <input placeholder="nick" id="name" onChange={(e) => dataProvided(e)} />
                 { language !== "pl" ? <h2>What region are you interested in?</h2> : <h2>Jaki region Cię interesuje?</h2> }
 
@@ -225,9 +225,9 @@ const SetupForm = ({setScreen, passDataToJSON, currScreenNum}) => {
                     }
                 </main>
 
-                { language !== "pl" ? <h2>What we should search for?</h2> : <h2>Czego powinniśmy szukać?</h2> }
+                { language !== "pl" ? <h2>Key words for search</h2> : <h2>Słowa kluczowe do wyszukiwania</h2> }
 
-                <input placeholder={language !== "pl" ? "one word e.g. Covid" : "jedno słowo n.p. Covid" } id="search_word" onChange={(e) => dataProvided(e)} />
+                <input placeholder={language !== "pl" ? "e.g Covid" : "n.p. Covid" } id="search_word" onChange={(e) => dataProvided(e)} />
 
                 { language !== "pl" ? <h2>Would you like to use dark mode?</h2> : <h2>Chcesz używać trybu ciemnego?</h2> }
                 <Toggler />
