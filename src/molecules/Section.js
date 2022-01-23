@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Article from './Article';
 import { pseudonim, language } from '../fetchData';
 import './Section.css';
@@ -18,7 +18,7 @@ const Section = ({ data }) => {
             )}
             
             <div className="news_cards" style={sectionsStyles}>
-              {data.articles.map((item, index) => <Article item={item} key={index+item.title}/> )}
+              {data.articles.map((item, index) => <Article item={item} index={index} key={index+item.title}/> )}
             </div>
 
 

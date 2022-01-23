@@ -68,7 +68,7 @@ const ArticlePage = ({ dataAll }) => {
                             <h1>{article.title}</h1>
                             <p>{article.description}</p>
                             <h4>{article.author}</h4>
-                            <a href={article.url}>
+                            <a href={article.url} target="_blank" rel="noreferrer">
                                 <Button label={language !== "pl" ? "go to article" : "przejdź do artykułu"} />
                             </a>
                         </section>
